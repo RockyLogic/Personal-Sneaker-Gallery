@@ -29,18 +29,18 @@
     }
     
     .navList {
+        display: inline-block;
         border-radius: 25px;
-        display: inline;
+        font-size: 15px;
         padding: 10px 20px;
-        margin: 10px 20px;
-        font-size: 20px;
+        margin: 0px 10px;
         background-color: rgb(43, 43, 59);
     }
     
     .navigation {
-        padding: 10px 5px;
-        margin: 10px;
-        text-align: center;
+        padding: 5px;
+        margin: 5px 10px;
+        text-align: right;
         color: white;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -56,6 +56,12 @@
         padding: 10px 10px 10px 0px;
         font-size: 20px;
     }
+    
+    .profileIcon {
+        border-radius: 25px;
+        margin: 0px 10px;
+        float: left;
+    }
 </style>
 
 
@@ -63,6 +69,7 @@
 
     <ul class="navigation">
         <strong>
+            <img src = "Icon.jpg" class="profileIcon" alt="icon" style="width: 40px; height: 40px;">
             <div class="navList">Home</div>
             <div class="navList">Collection</div>
             <div class="navList">Contact</div>
