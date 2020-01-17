@@ -60,12 +60,8 @@
         background-color: green;
     }
     
-    .collectionDisplay {
-        margin: 0px;
-        padding: 20px 80px;
-    }
-    
     .libraryTitle {
+        margin: 20px 80px;
         color: white;
         padding: 10px;
         background-color: rgb(43, 43, 59);
@@ -87,9 +83,8 @@
     
     .shoeDisplay {
         display: inline-block;
-        background-color: red;
         padding: 20px;
-        margin: 10px 0px;
+        margin: 10px;
         background-color: rgb(43, 43, 59);
         border-radius: 15px;
     }
@@ -102,13 +97,21 @@
         border-radius: 15px;
     }
     
-    .shoeDescriptionBox {
-        background-color: royalblue;
-        border-radius: 15px;
-    }
-    
     .shoeDescription {
         color: white;
+        font-size: 15px;
+        background-color: rgb(19, 19, 28);
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .ShoeDisplaySection {
+        background-color: red;
+        margin: 20px 80px;
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>
 
@@ -134,22 +137,40 @@
         </div>
     </header>
 
-    <section class="collectionDisplay">
-        <div class="libraryTitle">
-            <strong>
+
+    <div class="libraryTitle">
+        <strong>
                 Library
             </strong>
+    </div>
+
+    <section class="ShoeDisplaySection">
+
+        <div class="shoeDisplay">
+            <img src="Static350.jpg" class="shoeImageDisplay">
+            <div class="shoeDescription">
+                <strong>
+                    Yeezy 350 V2 Static
+                </strong>
+            </div>
         </div>
 
         <div class="shoeDisplay">
-            <img src="test.jpg" class="shoeImageDisplay">
+            <img src="Black350.jpg" class="shoeImageDisplay">
             <div class="shoeDescription">
-                Yeezy 350 V2 Static
+                <strong>
+                    Yeezy 350 V2 Black NRF
+                </strong>
             </div>
         </div>
+
+
+
+
         <div class="shoeDisplay">test2</div>
         <div class="shoeDisplay">test3</div>
     </section>
+
     <section class="mediaDisplay">
         <div class="collectionTitle">Section 2</div>
         <img src="test.jpg">
