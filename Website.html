@@ -14,13 +14,13 @@
         background-color: rgb(19, 19, 28);
         padding: 0%;
         margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
     .websiteTitle {
         background-color: red;
         color: rgb(255, 255, 255);
         padding: 40px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 50px;
         text-align: center;
         background-image: url(ShoeCollection.jpg);
@@ -51,7 +51,6 @@
         margin: 15px 10px;
         text-align: right;
         color: white;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
     .mediaDisplay {
@@ -61,9 +60,9 @@
     }
     
     .libraryTitle {
-        margin: 20px 80px;
+        margin: 30px 80px;
         color: white;
-        padding: 10px;
+        padding: 20px;
         background-color: rgb(43, 43, 59);
         font-size: 20px;
         border-radius: 15px;
@@ -85,16 +84,18 @@
         display: inline-block;
         padding: 20px;
         margin: 10px;
+        margin-bottom: 30px;
         background-color: rgb(43, 43, 59);
         border-radius: 15px;
     }
     
     .shoeImageDisplay {
         width: 400px;
-        height: 300px;
+        height: 270px;
         padding: 0px;
         margin: 0px;
         border-radius: 15px;
+        background-position: center;
     }
     
     .shoeDescription {
@@ -108,10 +109,10 @@
     }
     
     .ShoeDisplaySection {
-        background-color: red;
         margin: 20px 80px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 </style>
 
@@ -164,11 +165,23 @@
             </div>
         </div>
 
+        <div class="shoeDisplay">
+            <img src="Maison.jpg" class="shoeImageDisplay">
+            <div class="shoeDescription">
+                <strong>
+                    Jordan 1 Maison Chateau Rouge
+                </strong>
+            </div>
+        </div>
 
-
-
-        <div class="shoeDisplay">test2</div>
-        <div class="shoeDisplay">test3</div>
+        <div class="shoeDisplay">
+            <img src="Waverunner700.jpg" class="shoeImageDisplay">
+            <div class="shoeDescription">
+                <strong>
+                    Yeezy 700 Waverunner
+                </strong>
+            </div>
+        </div>
     </section>
 
     <section class="mediaDisplay">
