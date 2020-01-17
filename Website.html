@@ -15,11 +15,11 @@
         padding: 0%;
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white
     }
     
     .websiteTitle {
         background-color: red;
-        color: rgb(255, 255, 255);
         padding: 40px;
         font-size: 50px;
         text-align: center;
@@ -50,18 +50,10 @@
         padding: 5px 10px;
         margin: 15px 10px;
         text-align: right;
-        color: white;
-    }
-    
-    .mediaDisplay {
-        margin: 0;
-        padding: 0px;
-        background-color: green;
     }
     
     .libraryTitle {
         margin: 30px 80px;
-        color: white;
         padding: 20px;
         background-color: rgb(43, 43, 59);
         font-size: 20px;
@@ -80,6 +72,13 @@
         box-shadow: 0px 0px 5px 4px rgb(76, 185, 105);
     }
     
+    .ShoeDisplaySection {
+        margin: 20px 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
     .shoeDisplay {
         display: inline-block;
         padding: 20px;
@@ -89,9 +88,13 @@
         border-radius: 15px;
     }
     
+    .shoeDisplay:hover {
+        box-shadow: 0px 0px 5px 4px rgb(76, 185, 105);
+    }
+    
     .shoeImageDisplay {
-        width: 400px;
-        height: 270px;
+        width: 300px;
+        height: 230px;
         padding: 0px;
         margin: 0px;
         border-radius: 15px;
@@ -99,7 +102,6 @@
     }
     
     .shoeDescription {
-        color: white;
         font-size: 15px;
         background-color: rgb(19, 19, 28);
         border-radius: 15px;
@@ -108,11 +110,9 @@
         text-align: center;
     }
     
-    .ShoeDisplaySection {
-        margin: 20px 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .footer {
+        background-color: rgb(76, 185, 105);
+        padding: 10px;
     }
 </style>
 
@@ -129,6 +129,7 @@
     </ul>
 
     <header class="websiteTitle">
+
         <div>
             <strong>Welcome!</strong>
         </div>
@@ -136,13 +137,12 @@
         <div class="websiteSubTitle">
             <strong>Rocky's Shoe Display</strong>
         </div>
+
     </header>
 
 
     <div class="libraryTitle">
-        <strong>
-                Library
-            </strong>
+        <strong>Library</strong>
     </div>
 
     <section class="ShoeDisplaySection">
@@ -182,15 +182,28 @@
                 </strong>
             </div>
         </div>
+
+        <div class="shoeDisplay">
+            <img src="Bred11.jpg" class="shoeImageDisplay">
+            <div class="shoeDescription">
+                <strong>
+                    Jordan 11 Bred
+                </strong>
+            </div>
+        </div>
+
+        <div class="shoeDisplay">
+            <img src="Stone500.jpg" class="shoeImageDisplay">
+            <div class="shoeDescription">
+                <strong>
+                    Yeezy 500 Stone
+                </strong>
+            </div>
+        </div>
+
     </section>
 
-    <section class="mediaDisplay">
-        <div class="collectionTitle">Section 2</div>
-        <img src="test.jpg">
-    </section>
-
-    <footer class="mediaDisplay">
-        Footer
+    <footer class="footer">
     </footer>
 </body>
 
