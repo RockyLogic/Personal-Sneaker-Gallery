@@ -77,10 +77,38 @@
         border-radius: 25px;
         margin: 0px 10px;
         float: left;
+        width: 45px;
+        height: 45px;
     }
     
     .profileIcon:hover {
         box-shadow: 0px 0px 5px 4px rgb(76, 185, 105);
+    }
+    
+    .shoeDisplay {
+        display: inline-block;
+        background-color: red;
+        padding: 20px;
+        margin: 10px 0px;
+        background-color: rgb(43, 43, 59);
+        border-radius: 15px;
+    }
+    
+    .shoeImageDisplay {
+        width: 400px;
+        height: 300px;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 15px;
+    }
+    
+    .shoeDescriptionBox {
+        background-color: royalblue;
+        border-radius: 15px;
+    }
+    
+    .shoeDescription {
+        color: white;
     }
 </style>
 
@@ -89,7 +117,7 @@
 
     <ul class="navigation">
         <strong>
-            <img src = "Icon.jpg" class="profileIcon" alt="icon" style="width: 45px; height: 45px;">
+            <img src = "Icon.jpg" class="profileIcon" alt="icon">
             <div class="navList">Home</div>
             <div class="navList">Collection</div>
             <div class="navList">Contact</div>
@@ -107,8 +135,20 @@
     </header>
 
     <section class="collectionDisplay">
-        <div class="libraryTitle"><strong>Library</strong></div>
-        <img src="test.jpg">
+        <div class="libraryTitle">
+            <strong>
+                Library
+            </strong>
+        </div>
+
+        <div class="shoeDisplay">
+            <img src="test.jpg" class="shoeImageDisplay">
+            <div class="shoeDescription">
+                Yeezy 350 V2 Static
+            </div>
+        </div>
+        <div class="shoeDisplay">test2</div>
+        <div class="shoeDisplay">test3</div>
     </section>
     <section class="mediaDisplay">
         <div class="collectionTitle">Section 2</div>
