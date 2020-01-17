@@ -35,10 +35,13 @@
         padding: 10px 20px;
         margin: 0px 10px;
         background-color: rgb(43, 43, 59);
+        color: white;
+        text-decoration: none;
     }
     
     .navList:hover {
         box-shadow: 0px 0px 3px 2px rgb(76, 185, 105);
+        color: white;
     }
     
     .navigation {
@@ -109,19 +112,23 @@
         background-color: rgb(76, 185, 105);
         padding: 10px;
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 
 
 <body class="webpageStyle">
 
-    <ul class="navigation">
+    <ul class="navigation" id="HomeDiv">
         <strong>
             <a href="https://github.com/RockyLogic">
                 <img src = "Icon.jpg" class="profileIcon" alt="icon">
             </a>
-            <div class="navList">Home</div>
-            <div class="navList">Collection</div>
-            <div class="navList">Contact</div>
+            <a href="#HomeDiv"class="navList">Home</a>
+            <a href="#LibraryDiv"class="navList">Collection</a> 
+            <a href="#ContactDiv"class="navList">Contact</a>
         </strong>
     </ul>
 
@@ -138,7 +145,7 @@
     </header>
 
 
-    <div class="libraryTitle">
+    <div class="libraryTitle" id="LibraryDiv">
         <strong>Library</strong>
     </div>
 
@@ -200,7 +207,7 @@
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="ContactDiv">
     </footer>
 </body>
 
